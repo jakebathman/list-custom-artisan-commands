@@ -33,7 +33,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "JakeBathman\\ListCustomArtisanCommands\\Tests\\": "tests"
+            "JakeBathman\\ListCustomArtisanCommands\\Tests\\": "tests",
+            "App\\": "tests/app/"
         }
     },
     "scripts": {

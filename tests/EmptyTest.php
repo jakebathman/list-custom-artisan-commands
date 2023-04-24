@@ -3,21 +3,22 @@
 namespace JakeBathman\ListCustomArtisanCommands\Tests;
 
 use Illuminate\Support\Facades\Artisan;
+use JakeBathman\ListCustomArtisanCommands\ListCustomArtisanCommandsServiceProvider;
 
-class BasicTest extends TestCase
+class EmptyTest extends TestCase
 {
     /** @test */
     public function command_runs()
     {
         Artisan::call('list-custom');
 
-        $this->assertStringContainsString('Available commands [inside App\ namespace]', Artisan::output());
+        $this->assertStringContainsString('There are no custom commands defined.', Artisan::output());
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            TestListCustomArtisanCommandsServiceProvider::class,
+            ListCustomArtisanCommandsServiceProvider::class,
         ];
     }
 }
