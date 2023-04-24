@@ -1,6 +1,6 @@
 {
     "name": "jakebathman/list-custom-artisan-commands",
-    "description": "List only Artisan commands that fall under the application's `App\\` namespace, using much the same output as `php artisan list`.",
+    "description": "List only Artisan commands that fall under the application's App\\ namespace, using much the same output as php artisan list.",
     "keywords": [
         "laravel",
         "artisan"
