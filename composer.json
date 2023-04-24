@@ -1,0 +1,54 @@
+{
+    "name": "jakebathman/list-custom-artisan-commands",
+    "description": "",
+    "keywords": [
+        "list-custom-artisan-commands",
+        "laravel",
+        "artisan"
+    ],
+    "homepage": "https://github.com/jakebathman/list-custom-artisan-commands",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jake Bathman",
+            "email": "jake.bathman@gmail.com",
+            "homepage": "https://jake.cat",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "tightenco/duster": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JakeBathman\\ListCustomArtisanCommands\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JakeBathman\\ListCustomArtisanCommands\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JakeBathman\\ListCustomArtisanCommands\\ListCustomArtisanCommandsServiceProvider"
+            ],
+            "aliases": {
+                "ListCustomArtisanCommands": "JakeBathman\\ListCustomArtisanCommands\\ListCustomArtisanCommandsFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
