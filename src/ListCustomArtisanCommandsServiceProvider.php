@@ -10,7 +10,7 @@ class ListCustomArtisanCommandsServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('list-custom-artisan-commands.php'),
+                __DIR__ . '/../config/config.php' => config_path('list-custom-artisan-commands.php'),
             ], 'config');
 
             /*
@@ -25,6 +25,6 @@ class ListCustomArtisanCommandsServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'list-custom-artisan-commands');
+        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'list-custom-artisan-commands');
     }
 }

@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 class ExampleTest extends TestCase
 {
     /** @test */
-    function it_exists()
+    public function it_exists()
     {
         $this->assertTrue(true);
     }
