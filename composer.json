@@ -1,8 +1,7 @@
 {
     "name": "jakebathman/list-custom-artisan-commands",
-    "description": "",
+    "description": "List only Artisan commands that fall under the application's `App\\` namespace, using much the same output as `php artisan list`.",
     "keywords": [
-        "list-custom-artisan-commands",
         "laravel",
         "artisan"
     ],
@@ -47,10 +46,7 @@
         "laravel": {
             "providers": [
                 "JakeBathman\\ListCustomArtisanCommands\\ListCustomArtisanCommandsServiceProvider"
-            ],
-            "aliases": {
-                "ListCustomArtisanCommands": "JakeBathman\\ListCustomArtisanCommands\\ListCustomArtisanCommandsFacade"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
