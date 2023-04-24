@@ -6,6 +6,7 @@
         "laravel",
         "artisan"
     ],
+    "type": "library",
     "homepage": "https://github.com/jakebathman/list-custom-artisan-commands",
     "license": "MIT",
     "authors": [
@@ -17,9 +18,11 @@
         }
     ],
     "require": {
-        "php": "^8.1"
+        "php": "^8.0",
+        "laravel/framework": ">=8.0"
     },
     "require-dev": {
+        "orchestra/testbench": "^8.5",
         "phpunit/phpunit": "^9.0",
         "tightenco/duster": "^1.0"
     },
