@@ -5,7 +5,7 @@
 This package adds a single command to your Laravel application:
 
 ```bash
-php artisan commands:custom
+php artisan list-custom
 ```
 
 This provides much the same output as `php artisan list`, but only showing you commands that fall under the application's `App\` namespace. This makes it much easier to see your own commands in an app, instead of your commands all mixed in to the default command set as well.
